@@ -1,5 +1,5 @@
 *, html, body {
-   background-color: blueviolet;
+   background-color: rgb(20, 4, 34);
    color: aliceblue;
 }
 
@@ -21,9 +21,41 @@ h3 {
    margin: 0 auto;
 }
 
+.footer {
+   text-align: center;
+   width: 100%;
+   left: 0;
+   bottom: 0;
+   padding-top: 6rem;
+}
+
+.footer p {
+   background-color: rgb(37, 3, 37);
+   color: aliceblue;
+   padding: 1rem;
+   font-size: smaller;
+}
+
+@keyframes spin {
+   from {
+      transform: rotateY(0deg);
+   }
+   to {
+      transform: rotateY(360deg);
+   }
+}
+
+.imageSpin {
+   animation-name: spin;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-duration: 5s;
+}
+
 @media only screen and (max-width: 456px) {
    .container {
       text-align: left;
+      min-height: calc(100vh - 40px);
    }
    .grid {
       width: 85%;

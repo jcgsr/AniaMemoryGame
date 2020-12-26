@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
    function createBoard() {
       for (let i = 0; i < cardArray.length; i++) {
          var card = document.createElement('img')
-         card.setAttribute('src', 'img/rainbow.jpg')
+         card.setAttribute('src', 'img/purple.jpg')
          card.setAttribute('data-id', i)
          card.addEventListener('click', flipCard)
          grid.appendChild(card)
@@ -77,12 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const optionTwoId = cardsChosenId[1]
       if (cardsChosen[0] === cardsChosen[1]) {
          alert("Achou um par!")
-         cards[optionOneId].setAttribute('src', 'img/white.jpg')
-         cards[optionTwoId].setAttribute('src', 'img/white.jpg')
+         cards[optionOneId].setAttribute('src', 'img/gray.jpg')
+         cards[optionTwoId].setAttribute('src', 'img/gray.jpg')
          cardsWon.push(cardsChosen)
       } else {
-         cards[optionOneId].setAttribute('src', 'img/rainbow.jpg')
-         cards[optionTwoId].setAttribute('src', 'img/rainbow.jpg')
+         cards[optionOneId].setAttribute('src', 'img/purple.jpg')
+         cards[optionTwoId].setAttribute('src', 'img/purple.jpg')
          alert("Nada feito... Tente de novo.")
       }
       cardsChosen = []

@@ -8,6 +8,10 @@
    padding: 2rem;
 }
 
+h1, h3 {
+   text-shadow: 1px 3px 5px gray;
+}
+
 h3 {
    padding: 2rem;
 }
@@ -19,6 +23,7 @@ h3 {
    width: 400px;
    text-align: center;
    margin: 0 auto;
+   box-shadow: 2px 4px 5px gray;
 }
 
 .footer {
@@ -36,8 +41,9 @@ h3 {
    font-size: smaller;
 }
 
-#date {
-   padding-top: 2rem;
+.date-now{
+   text-align: center;
+   margin-top: 8rem;
 }
 
 @keyframes spin {
@@ -63,8 +69,10 @@ h3 {
    }
    .grid {
       width: 85%;
+      margin-left: 4.2rem;
+      box-shadow: none;
    }
-   h1 {
+   h1, h3 {
       margin-left: 2rem;
    }
 }
